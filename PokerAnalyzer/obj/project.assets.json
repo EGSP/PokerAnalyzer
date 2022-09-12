@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DNS\\RiderProjects\\PokerAnalyzer\\PokerAnalyzer\\PokerAnalyzer.csproj",
+      "projectUniqueName": "C:\\Users\\DNS\\VisualProjects\\PokerAnalyzer\\PokerAnalyzer\\PokerAnalyzer.csproj",
       "projectName": "PokerAnalyzer",
-      "projectPath": "C:\\Users\\DNS\\RiderProjects\\PokerAnalyzer\\PokerAnalyzer\\PokerAnalyzer.csproj",
+      "projectPath": "C:\\Users\\DNS\\VisualProjects\\PokerAnalyzer\\PokerAnalyzer\\PokerAnalyzer.csproj",
       "packagesPath": "C:\\Users\\DNS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DNS\\RiderProjects\\PokerAnalyzer\\PokerAnalyzer\\obj\\",
+      "outputPath": "C:\\Users\\DNS\\VisualProjects\\PokerAnalyzer\\PokerAnalyzer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DNS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -63,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

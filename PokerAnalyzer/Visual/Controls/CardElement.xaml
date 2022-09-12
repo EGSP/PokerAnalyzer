@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="PokerAnalyzer.Visual.Controls.CardElement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PokerAnalyzer.Visual.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <Grid Height="448">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="SuitIcon" Margin="10,10,16,18" Source="/Visual/Icons/Hearts.png"/>
+                <Image x:Name="RangIcon" Margin="13,10,13,18" Grid.Column="1" Source="/Visual/Icons/spades.png"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>
