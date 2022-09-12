@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Table = PokerAnalyzer.Code.Table;
 
 namespace PokerAnalyzer
 {
@@ -23,6 +24,8 @@ namespace PokerAnalyzer
         public MainWindow()
         {
             InitializeComponent();
+
+            var stack = Table.Functions.CreateStack();
         }
     }
 }

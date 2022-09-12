@@ -6,16 +6,38 @@ namespace PokerAnalyzer.Code;
 
 public class Table
 {
+    public static class Functions
+    {
+        public static IReadOnlyList<Card> CreateStack()
+        {
+            var rangs = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+            var suits = new int[] { 0, 1, 2, 3 };
+
+            var stack = new List<Card>(52);
+
+            foreach (var rang in rangs)
+            {
+                foreach (var suit in suits)
+                {
+                    stack.Add(new Card((Rangs)rang, (Suits)suit));
+                }
+            }
+
+            return stack;
+        }
+    }
     public IReadOnlyList<Player> Players { get; init; }
+    public IReadOnlyList<Card> Stack { get; init; }
     public List<Card> Cards { get; init; }
-    public int Stack { get; private set; }
     public int Bank { get; set; }
 
-    public Table(IReadOnlyList<Player> players, int stack)
+    public Table(IReadOnlyList<Player> players, IReadOnlyList<Card> stack)
     {
         Players = players;
-        Cards = new List<Card>();
         Stack = stack;
+        
+        Cards = new List<Card>();
+        
         Bank = 0;
     }
 }

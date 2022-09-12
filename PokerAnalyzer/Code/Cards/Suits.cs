@@ -3,11 +3,11 @@ namespace PokerAnalyzer.Code.Cards;
 /// <summary>
 /// Масти карт
 /// </summary>
-public enum Suits
+public enum Suits : int
 {
     // Черви, бубны, пики, трефы.
-    Hearts,
-    Diamonds,
-    Spades,
-    Clubs
+    Hearts = 0,
+    Diamonds = 1,
+    Spades= 2,
+    Clubs= 3
 }
